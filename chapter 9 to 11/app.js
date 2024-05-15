@@ -8,7 +8,6 @@
 // }
 
 
-
 // 2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am:
 // ------ANSWER------
 // var x = prompt ("Enter Your Gender?");
@@ -25,11 +24,13 @@
 // var trafficSignal = prompt(" Put Color of Road Traffic Signal");
 // if(trafficSignal === "Red"){
 //     alert("Must Stop")
+// }else if(trafficSignal === "Yellow")  { 
+//     alert("Ready to move")
+// }else if(trafficSignal === "Green")  { 
+//     alert("Move now")
+// }else{ 
+//     alert("Enter Correct Answer")
 // }
-// else { 
-//     alert("ready to movie")
-// }
-
 
 
 // 4. Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.25litres, show the message “Please refill the fuel in your car”:
@@ -168,26 +169,27 @@
 
 // 7. Guess game: Store a secret number (ranging from 1 to 10) in a variable.Prompt user to guess the secret number. a. If user guesses the same number, show “Bingo! Correct answer”. b. If the guessed number +1 is the secret number, show “Close enough to the correct answer”.
 // ------ANSWER------
-// var secretNumber = 2 + 1;
+// var secretNumber = 3;
 // var guess = +prompt("Guess the secret number (between 1 and 10):");
 // if (guess === secretNumber) {
-//     console.log("Bingo! Correct answer.");
-// }else if (guess === secretNumber + 1 || guess === secretNumber - 1) {
-//     console.log("Close enough to the correct answer.");
+//    alert("Bingo! Correct answer.");
+// }else if (guess === ++secretNumber) {
+//     alert("Close enough to the correct answer.");
 // }else {
-//     console.log("Sorry, incorrect guess. The correct number was " + secretNumber);
+//     alert("Sorry, Incorrect Guess.");
 // }
+
 
 
 
 // 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
 // ------ANSWER------
-// var num = +prompt("Enter a number:");
-// var num;
-// if (num % 3 === 0) {
-//     console.log(num + " is divisible by 3.");
-// } else {
-//     console.log(num + " is not divisible by 3.");
+// var number = +prompt("Enter a number:");
+// if(number%3 === 0){
+//     alert(number + " is divisible by 3.");
+// }
+// else{
+//     alert(number + " is not divisible by 3.");
 // }
 
 
@@ -204,15 +206,25 @@
 
 
 
-
-
 // 10. Write a program that takes temperature as input and shows a message based on following criteria
 // a. T > 40 then “It is too hot outside.”
 // b. T > 30 then “The Weather today is Normal.”
 // c. T > 20 then “Today’s Weather is cool.”
 // d. T > 10 then “OMG! Today’s weather is so Cool.”
 // ------ANSWER------
-
+//  var temperature = +prompt("Enter Your City Temperature")
+//  if(temperature>=40){
+//     alert("It is Too Hot Outside.")
+//  }
+//  else if(temperature>=30){
+//     alert("The Weather today is Normal.")
+//  }
+//  else if(temperature>=20){
+//     alert("Today's Weather is Cool.")
+//  }
+//  else if(temperature>=10){
+//     alert("OMG! Today's Weather is so Cool.")
+//  }
 
 
 
@@ -223,3 +235,21 @@
 // c. Operation (+, -, *, /, %)
 // Compute & show the calculated result to user
 // ------ANSWER------
+// var firstNumber = +prompt("Enter First Number")
+// var secondNumber = +prompt("Enter Second Number")
+// var operation=prompt("Choose your operation : \n(+, - , * , % ")
+// if(operation==="+"){
+//     alert(firstNumber+secondNumber)
+// }
+// else if(operation==="-"){
+//     alert(firstNumber-secondNumber)
+// }
+// else if(operation==="*"){
+//     alert(firstNumber*secondNumber)
+// }
+// else if(operation==="/"){
+//     alert(firstNumber/secondNumber)
+// }
+// else{
+//     alert(firstNumber%secondNumber)
+// }
