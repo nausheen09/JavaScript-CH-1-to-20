@@ -1,0 +1,47 @@
+
+.cont-custom{
+    width: 100%;
+    background: #FAFAFA;
+}
+.nav-blue{
+    width: 100%;
+}
+.naav-custom{
+    background: #FEFEFF;
+}
+
+.fonnt {
+    font-size: 70px;
+}
+.first5 button {
+    background: #FEFEFF;
+    padding: 15px 35px 15px 35px;
+    border-radius: 40px;
+    border: 1px;
+}
+
+.tirth {
+    /* background-color: #777676; */
+    width: 100%;
+    height: 100%;
+}
+
+.btn-custom{
+    border-radius: 40px;
+    border: 1px solid black;
+}
+.heading{
+    width: 50%;
+    font-size: 40px;  
+}
+.number{
+    width: 90%;
+}
+
+@media screen and (min-width:400px) and (max-width:992px) {
+    .heading{
+        font-size: 30px;
+    }
+    
+}
+

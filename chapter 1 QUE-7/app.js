@@ -1,0 +1,1 @@
+alert("Hi! Wellcome...\nQuestion no 6.\nQuestion no 7-A")
