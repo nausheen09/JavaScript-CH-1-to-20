@@ -1,9 +1,18 @@
-                               // ------------CHAPTER 09 to 11--------------
+// ------------CHAPTER 09 to 11--------------
 // 1. Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).
 // ------ANSWER------
+// var chara = prompt("Please enter your character to checks whether the given input is a number, uppercase letter or lower case letter");
+// var chara = chara.charCodeAt(0);
 
-
-
+// if (chara >= 48 && chara <= 57) {
+//     alert("The input is a number.");
+// } else if (chara >= 65 && chara <= 90) {
+//     alert("The input is an uppercase letter.");
+// } else if (chara >= 97 && chara <= 122) {
+//     alert("The input is a lowercase letter.");
+// } else {
+//     alert("The input is neither a number nor a letter.");
+// }
 
 
 
@@ -41,6 +50,14 @@
 
 // 4. Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise.
 // ------ANSWER------
+// var character = prompt("Enter character to check vowel or not");
+// if (character === "a" || character === "e" || character === "i" || character === "o" || character === "u" || character === "A" || character === "E" || character === "I" || character === "O" || character === "U"){
+//             alert(character + "  is Vowel")
+//         }
+//         else{
+//             alert(character + " is Not Vowel")
+//         }
+
 
 
 
@@ -57,6 +74,7 @@
 // else{
 //     alert("Incorrect Password")
 // }
+
 
 
 
@@ -78,3 +96,19 @@
 
 // 7. Write a program that takes time as input from user in 24 hours clock format like: 1900 = 7pm. Implement the following case using if, else & else if statements.
 // ------ANSWER------
+// var time = +prompt("Please enter time in 24 hours \n clock format like (e.g., 1900 for 7 PM):");
+// if(time>="0000" && time<1200){
+//     alert("Good Morning")
+// }
+// else if(time>=1200 && time<1700){
+//     alert("Good Afternoon")
+// }
+// else if(time >=1700 && time<2100){
+//     alert("Good Evening")
+// }
+// else if(time >=2100 && time<=2359){
+//     alert("Good Night")
+// }
+// else{
+//     alert("Invalid Input")
+// }
