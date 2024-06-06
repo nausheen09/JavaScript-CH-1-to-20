@@ -6,7 +6,11 @@
 
 // 2. Declare and initialize a multidimensional array representing the following matrix:
 // ------ANSWER------
-
+// var matrix=[ [0,1,2,3], [1,0,1,2], [2,1,0,1]];
+// for(var i=0; i<matrix.length; i++){
+//     document.write(matrix[i].join(" "))
+//     document.write("<br>")
+// };
 
 
 // 3. Write a program to print numeric counting from 1 to 10.
@@ -82,16 +86,52 @@
 
 // 7. You have an array A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]. Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not. Example:
 // ------ANSWER------
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var userInput= prompt("Enter an item to search:");
+// var lowerCaseInput = userInput.toLowerCase();
+// var found = false;
+// for(var i=0; i < A.length; i++){
+//     if(A[i].toLowerCase()=== lowerCaseInput){
+//         found = true ;
+//         break;
+//     }
+// };
+// if (found) {
+//     alert(userInput + " is found in the list.");
+// } else {
+//     alert(userInput + " is not found in the list.");
+// };
+
+
 
 
 // 8. Write a program to identify the largest number in the given array. A = [24, 53, 78, 91, 12].
 // ------ANSWER------
-
+// var A = [24, 53, 78, 91, 12];
+// var largest = arr[0];
+// for(var i =i; i< arr.length; i++){
+//     if(arr[i]> largest){
+//         largest = arr[i];
+//     }
+// }
+// return largest;
+// let largestNumber = findLargest3Number(A);
+// console.log("The largest number in the array is: " + largestNumber);
 
 
 // 9. Write a program to identify the smallest number in the given array. A = [24, 53, 78, 91, 12].
 // ------ANSWER------
+// A = [24, 53, 78, 91, 12]
 
+// var arr=[24,53,78,91,12];
+// var smallestNo=arr[0];
+// for(var i=0;i<arr.length;i++){
+//     if(arr[i]<smallestNo){
+//         smallestNo=arr[i]
+//     }
+// }
+// document.write('Array items : '+arr+'<br>');
+// document.write('The smallest number is '+smallestNo)
 
 
 // 10. Write a program to print multiples of 5 ranging 1 to 100.
