@@ -29,7 +29,7 @@
 
 // 3. Display this in your browser:
 // ------ANSWER------
-// var contentWithBreaks = " Rules for naming JS variables:<br>a) Variable names can only contain: myName, My-Name, $price, 1stName.<br>b) Variable names are case: Snake case, Pascal case, Camel case.<br> c) Variable names should not be JS: 123variable.";
+// var contentWithBreaks = " Rules for naming JS variables:<br>a) Variable names can only contain: myName, My_Name, $price, Name12.<br>b) Variable names are case: sensitive.<br> c) Variable names should not be JS: Keywords.";
 // var name1 = "John ";
 // var _name = "Jane ";
 // var $name = "Jake";
@@ -195,6 +195,6 @@
 
 // 13.The Lifetime Supply Calculator: Ever wonder how much a “lifetime supply” of your favorite snack is? Wonder no more.
 // ------ANSWER------
-var chocolate =((65-15)*3)
-document.write("The Lifetime Supply Calculator<br>Favorite Snack is Chocolate<br>Current Age :15<br>Estimated Maximum Age: 65<br>Amount of Snake per day: 3")
-document.write("<br>You will need to "  +chocolate +" Chocolate to last youe until the ripe old age of 65")
+// var chocolate =((65-15)*3);
+// document.write("The Lifetime Supply Calculator<br>Favorite Snack is Chocolate<br>Current Age :15<br>Estimated Maximum Age: 65<br>Amount of Snake per day: 3")
+// document.write("<br>You will need to "  +chocolate +" Chocolate to last youe until the ripe old age of 65");

@@ -108,30 +108,28 @@
 // 8. Write a program to identify the largest number in the given array. A = [24, 53, 78, 91, 12].
 // ------ANSWER------
 // var A = [24, 53, 78, 91, 12];
-// var largest = arr[0];
-// for(var i =i; i< arr.length; i++){
-//     if(arr[i]> largest){
-//         largest = arr[i];
+// var largest = A[0];
+// for (var i = 1; i < A.length; i++) {
+//     if (A[i] > largest) {
+//         largest = A[i];
 //     }
 // }
-// return largest;
-// let largestNumber = findLargest3Number(A);
-// console.log("The largest number in the array is: " + largestNumber);
+// console.log("The largest number in the array is:", largest);
+
 
 
 // 9. Write a program to identify the smallest number in the given array. A = [24, 53, 78, 91, 12].
 // ------ANSWER------
-// A = [24, 53, 78, 91, 12]
-
-// var arr=[24,53,78,91,12];
-// var smallestNo=arr[0];
-// for(var i=0;i<arr.length;i++){
-//     if(arr[i]<smallestNo){
-//         smallestNo=arr[i]
+// A = [24, 53, 78, 91, 12];
+// var smallest = A[0];
+// for(var i=1; i<A.length; i++){
+//     if(A[i]<smallest){
+//         smallest=A[i]
 //     }
 // }
-// document.write('Array items : '+arr+'<br>');
-// document.write('The smallest number is '+smallestNo)
+// document.write("Array items : "+A+"<br>");
+// document.write("The smallest number is "+smallest)
+
 
 
 // 10. Write a program to print multiples of 5 ranging 1 to 100.

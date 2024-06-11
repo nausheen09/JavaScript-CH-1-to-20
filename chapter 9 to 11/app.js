@@ -2,11 +2,13 @@
 
 // 1. Write a program to take “city” name as input from user. If user enters “Karachi”, welcome the user like this: “Welcome to city of lights”:
 // ------ANSWER------
-// var x = prompt ("Where do you live?");
-// if (x === "Karachi") {
+// var userinput  = prompt ("Where do you live?");
+// if (userinput === "Karachi") {
 //     alert("Welcome to city of lights")
 // }
-
+// else {
+//     alert("city name is not correct")
+// }
 
 // 2. Write a program to take “gender” as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma’am:
 // ------ANSWER------
@@ -24,11 +26,11 @@
 // var trafficSignal = prompt(" Put Color of Road Traffic Signal");
 // if(trafficSignal === "Red"){
 //     alert("Must Stop")
-// }else if(trafficSignal === "Yellow")  { 
+// }else if(trafficSignal === "Yellow")  {
 //     alert("Ready to move")
-// }else if(trafficSignal === "Green")  { 
+// }else if(trafficSignal === "Green")  {
 //     alert("Move now")
-// }else{ 
+// }else{
 //     alert("Enter Correct Answer")
 // }
 
@@ -50,7 +52,7 @@
 // var a = 4;
 // if (++a === 5){
 // alert("given condition for variable a is true");
-// } 
+// }
 // REASON:
 //The condition ++a === 5 is evaluated. Since ++a has become 5 due to the increment operation,and 5 === 5 is true, the condition evaluates to true.The alert("given condition for variable a is true"); statement will be display.
 
@@ -119,7 +121,7 @@
 // if("car" < "cat"){
 //     alert("car is smaller than cat");
 // }
-// REASON: 
+// REASON:
 // In this case, the comparison "car" < "cat" is true because the character 'r' comes before 't' in the Unicode sequence. Therefore, the alert message "car is smaller than cat" will be displayed.
 
 

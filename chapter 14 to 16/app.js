@@ -151,16 +151,16 @@
 
 // // Enqueue (add) values to the array
 // device.push("Keyboard ");
-// device.push(" Moues ");
-// device.push(" Printer ");
-// device.push(" Monitor");
+// device.push("Moues ");
+// device.push("Printer ");
+// device.push("Monitor");
+
 
 // // Dequeue (access and remove) values in FIFO order
-// while (device.length > 0) {
+// for ( var i= 0; i<device.length;) {
 //     var value = device.shift();
 //     console.log(value);
 // }
-
 
 
 // 14. Create a new array. Store values one by one in such a way that you can access the values in reverse order. (last In - First Out):
@@ -172,7 +172,7 @@
 // devices.push(" Monitor ");
 
 // Access and remove values in reverse order (LIFO)
-// while (devices.length > 0) {
+// for (var i=0; i<devices.length;) {
 //     var value = devices.pop();
 //     console.log(value);
 // }
@@ -187,7 +187,7 @@
 // document.write("<option>" + phoneManu[2]+ "<option>")
 // document.write("<option>" + phoneManu[3]+ "<option>")
 // document.write("<option>" + phoneManu[4]+ "<option>")
-// document.write("</select>")
+// document.write("</select>");
 
 
 

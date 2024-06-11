@@ -19,4 +19,4 @@
 // console.log('Hello World!');
 
 // QUESTION NO 6 AND 7
- alert("Hi! Wellcome...\nQuestion no 6.\nQuestion no 7")
+//  alert("Hi! Wellcome...\nQuestion no 6.\nQuestion no 7")

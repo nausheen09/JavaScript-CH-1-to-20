@@ -57,14 +57,17 @@
 
 // 5. Write a program to take input a number from user & display it’s multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default.
 // ------ANSWER------
-// var number = prompt('Enter Your Number')
+// var number = prompt("Enter Your Number");
 // if (number === '') {
 //     number = 5;
 // }
+// else{
+//     alert("wrong number")
+// }
 // var table = "<h3>Table for " + number + ":</h3>";
 // for (var i = 1; i <= 10; i++) {
-//     document.write(number + '*' + i + '=' + number * i + '<br/>');
-// }
+//     document.write(number + "*"+ i + "=" + number * i + "<br/>");
+// };
 
 
 
