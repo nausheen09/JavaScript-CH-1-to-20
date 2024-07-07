@@ -1,4 +1,4 @@
-// ------------CHAPTER 21 to 22--------------
+// ------------CHAPTER 21 to 25--------------
 // 1. Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name:
 // ------ANSWER------
 // var firstName = prompt("Write your first name");
@@ -204,7 +204,7 @@
 
 
 
-// ------------CHAPTER 21 to 22--------------
+// ------------CHAPTER 26 to 30--------------
 
 // 1. Write a program that takes a positive integer from user & display the following in your browser.a. number b. round off value of the number
 // c. floor value of the number
