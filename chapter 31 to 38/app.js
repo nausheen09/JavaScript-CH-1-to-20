@@ -158,7 +158,8 @@
 
 
 
-// ------------CHAPTER 35 to 38--------------
+
+// ------------CHAPTER 35 to 38-------------------
 // 1. Write a function that displays current date & time in your browser.
 //------ANSWER------
 // function date(){
@@ -252,6 +253,36 @@
 
 // 7. Write a function that take start and end number as inputs & display counting in your browser.
 //------ANSWER------
+// function counting(start, end){
+//     var start =parseInt(prompt("Enter start number for counting:"));
+//     var end =parseInt(prompt("Enter end number for counting:"));
+//     for(var i = start; i<=end; i++){
+//         document.write(i + "</br>");
+//     }
+// } counting();
+
+
+// function counting() {
+//     var start = parseInt(prompt("Enter start number for counting:"));
+//     var end = parseInt(prompt("Enter end number for counting:"));
+//     if (isNaN(start) || isNaN(end)) {
+//         document.write("Please enter valid numbers for start and end.");
+//         return;
+//     }
+//     if (start > end) {
+//         document.write("Start number should be less than or equal to end number.");
+//         return;
+//     } 
+//     var result;
+//     var result = "";
+//     for (var i = start; i <= end; i++) {
+//         result += i + "<br>";
+//     }
+//     document.write(result);
+// }counting();
+
+
+
 
 
 // 8. Write a nested function that computes hypotenuse of a right angle triangle. Hypotenuse2 = Base2 + Perpendicular2. Take base and perpendicular as inputs. Outer function : calculateHypotenuse() Inner function: calculateSquare():
@@ -272,24 +303,93 @@
 
 // 9. Write a function that calculates the area of a rectangle. A = width * height Pass width and height in following manner: i. Arguments as value. ii. Arguments as variables:
 //------ANSWER------
+// i. Arguments as value------
+// function calculateArea(width, height) {
+//     return width * height;
+// }
+// document.write("Area of rectangle (5, 10): " + calculateArea(5, 10));
+
+
+// ii. Arguments as variables:---
+// function Calculate(width,height){
+//    return width * height;
+// }
+// var width= 6;
+// var height= 8;
+// var area = Calculate(width,height);
+// document.write("Area of rectangle (" + width + ", " + height + "): " + area + "<br>");
+
+
+// function calculate(width,height){
+//     var width = parseInt(prompt("Enter width of triangle"));
+//     var height = parseInt(prompt("Enter height of triangle"));
+//     var A = width * height;
+//     return A; 
+// }
+// document.write("Area of Rectangle is: "+calculate()); 
+
+
 
 
 // 10. Write a JavaScript function that checks whether a passed string is palindrome or not? A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.
 //------ANSWER------
 
 
+
 // 11. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. EXAMPLE STRING : 'the quick brown fox'. EXPECTED OUTPUT : 'The Quick Brown Fox':
 //------ANSWER------
+// function UpperCase(str){
+//     var array= str.split(" ");
+//     var newArray = [];
+//     for(var i = 0; i < array.length; i++) {
+//     newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1))
+//             }
+//             return newArray.join(" ");
+// }
+// var str = "the quick brown fox";
+// var result = UpperCase(str);
+// document.write("EXAMPLE  SRING: " + str + "<br>");
+// document.write("EXPECTED  SRING: " + result + "<br>");
+
 
 
 
 // 12. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. EXAMPLE STRING : 'Web Development Tutorial'. EXPECTED OUTPUT : 'Development':
 //------ANSWER------
+// function longest(string) {
+//     var split = string.split(" ");
+//     var first = split[0].length;
+//     for (var i = 0; i < split.length; i++) {
+//         if (first < split[i].length) {
+//             first = split[i]
+//         }
+//     }
+//     return first;
+// }
+// var string = "Web Development Tutorial";
+// var result = longest(string);
+// document.write("EXAMPLE  SRING: " + string + "<br>");
+// document.write("EXPECTED  SRING: " + result + "<br>");
+
 
 
 
 // 13. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Sample arguments : 'JSResourceS.com', 'o':
 //------ANSWER------
+// function count(string, letter) {
+//     var findOut = 0;
+//     for (var i = 0; i < string.length; i++) {
+//         if (string[i] === letter) {
+//             find += 1;
+//         }
+//     }
+//     return findOut;
+// }
+// var string = "JSResourceS.com";
+// var letter = "o";
+// var result = count(string, letter);
+// document.write("The occurence of o in this string is " + result);
+
 
 
 
@@ -324,251 +424,6 @@
 
 
 
-
-
-
-
-// ----------- Chapter 35-38 Functions ----------
-
-// Task 1
-// Write a function that displays current date & time in your browser.
-
-// function tellTime(){
-//     var today= new Date();
-//     document.write(today);
-// }
-// tellTime()
-
-// function greetUser(){
-//    var firstName=prompt('C');
-//    var secondName=prompt('Write your second name');
-//    alert('Hello '+firstName+' '+secondName)
-// }
-// greetUser();
-
-
-// Task 3
-// Write a function that adds two numbers (input by user) and returns the sum of two numbers.
-
-// function sum(){
-//     var firstNum=+prompt('Enter first number');
-//     var secondNum=+prompt('Enter Second number');
-//     var result=firstNum+secondNum;
-//     alert('The sum of '+firstNum+' and '+secondNum+' is '+result)
-// }
-// sum();
-
-// Task 4
-// Write a function that takes three arguments num1, num2 & operator & compute the desired operation. Return and show the desired result in your browser
-
-// function calculator(num1,opera,num2){
-//     if(opera==='+'){
-//         var result= num1+num2;
-//         alert(result)
-//     }
-//     else if(opera==='-'){
-//         var result= num1-num2;
-//         alert(result)
-//     }
-//     else if(opera==='*'){
-//         var result= num1*num2;
-//         alert(result)
-//     }
-//     else if(opera==='/'){
-//         var result= num1/num2;
-//         alert(result)
-//     }
-//     else{
-//         alert('Invalid Operator')
-//     }
-// }
-// var firstNumber=+prompt('Enter first number');
-// var operator=prompt('Enter operator');
-// var secondNumber=+prompt('Enter Second number');
-// calculator(firstNumber,operator,secondNumber);
-
-
-// Task 5
-// Write a function that squares its argument.
-
-// function square(num){
-//     var square=num**2;
-//     alert(square)
-// }
-// var number=+prompt('Enter number to be square')
-// square(number);
-
-// Task 6
-// Write a function that computes factorial of a number
-
-// function factorial(){
-// var n = +prompt('enter n')
-// var fact = 1;
-// if (n === 1 || n === 0) {
-// }
-// else {
-//     for (var i = n; i >= 1; i--) {
-//         fact = fact * i
-//     }
-// }
-// document.write(fact)
-// }
-// factorial()
-
-// Task 7
-// Write a function that take start and end number as inputs & display counting in your browser.
-
-// function counting(start,end){
-//     for(var i = start; i <= end; i++ ){
-//         document.write(i + '<br>');
-//     }
-// }
-// var start = +prompt("Enter start number for counting:");
-// var end = +prompt("Enter end number for counting:");
-// counting(start,end);
-
-// Task 8
-// Write a nested function that computes hypotenuse of a right angle triangle.
-// function calculateHypotenuse(base,perpendicular){
-
-
-// function calculateHypotenuse(base, perpendicular) {
-//     var base, perpendicular;
-
-//     function calculateSquare(num) {
-//         num = num * num;
-//         return num;
-//     }
-//     base = calculateSquare(base);
-//     perpendicular = calculateSquare(perpendicular);
-//     var hyp = base + perpendicular;
-
-//     return hyp;
-
-// }
-
-// var base = +prompt('Enter base of right angle triangle');
-// var perpendicular = +prompt('Enter perpendicular of right angle triangle');
-// var hyp = calculateHypotenuse(base, perpendicular)
-// alert('The hypotenuse of right angle triangle is ' + hyp)
-
-
-// Task 9
-// Write a function that calculates the area of a rectangle.      A = width * height
-
-// function areaCalculate(width,height){
-//     var A=width*height;
-//     return A;
-// }
-// var width=+prompt('Enter width of triangle');
-// var height=+prompt('Enter height of triangle');
-// var result=areaCalculate(width,height);
-// document.write(result)
-
-// Task 10
-// Write a JavaScript function that checks whether a passed string is palindrome or not?
-
-// function palindrome(string) {
-//       var check = '';
-//       for (var i = string.length - 1; i >= 0; i--) {
-//             check += string[i]
-//       }
-//       if (string === check) {
-//             alert(string + ' is a plindrome word')
-//       }
-//       else {
-//             alert(string + ' is  not a plindrome word')
-
-//       }
-// }
-// var str = prompt('Write any word')
-// palindrome(str);
-
-// Task 11
-// Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
-
-// function UpperCase(str) {
-//     var arr = str.split(' ');
-//     var newArray = [];
-//     for (var i = 0; i < arr.length; i++) {
-//         newArray.push(arr[i].charAt(0).toUpperCase() + arr[i].slice(1))
-//     }
-//     return newArray.join(' ')
-
-// }
-
-// var str = 'the quick brown fox'
-// var result = UpperCase(str)
-// document.write('EXAMPLE  SRING :' + str + '<br>')
-// document.write('EXPECTED  SRING :' + result + '<br>')
-
-
-// Task 12
-// Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
-
-
-// function longest(str) {
-//     var split = str.split(' ');
-//     var first = split[0].length;
-//     for (var i = 0; i < split.length; i++) {
-//         if (first < split[i].length) {
-//             first = split[i]
-//         }
-//     }
-//     return first;
-// }
-// var str = 'Web Development Tutorial ';
-// var result = longest(str);
-// document.write('EXAMPLE  SRING :' + str + '<br>')
-// document.write('EXPECTED  SRING :' + result + '<br>')
-
-
-// Task 13
-// Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.  Sample arguments : 'JSResourceS.com', 'o' .
-
-// function count(str, letter) {
-//     var find=0;
-//     for (var i = 0; i < str.length; i++) {
-//         if (str[i] === letter) {
-//             find += 1;
-//         }
-//     }
-//     return find
-// }
-// var str = 'JSResourceS.com';
-// var letter = 'o'
-// var result = count(str, letter);
-// document.write('The occurence of o in this string is ' + result)
-
-// Task 14
-//14. The Geometrizer
-// Create 2 functions that calculate properties of a circle, using
-// the definitions here.
-// Create a function called calcCircumference:
-// • Pass the radius to the function.
-// • Calculate the circumference based on the radius, and output
-// "The circumference is NN".
-// Create a function called calcArea:
-// • Pass the radius to the function.
-// • Calculate the area based on the radius, and output "The area
-// is NN".
-
-// Circumference of circle = 2πr
-// Area of circle = πr2
-
-// function calcCircumference(value){
-//     var circumference=2*3.141*value;
-//     return circumference
-// }
-//  function calcArea(value){
-//      var area=3.141*(value*value);
-//      return area
-//  }
-// var radius=+prompt('Enter radius of circle ');
-// var circumference=calcCircumference(radius);
-// var area=calcArea(radius);
-// document.write('The Circumference of circle is '+circumference+'<br>')
-// document.write('The Area of circle is '+area+'<br>')
 
 
 
