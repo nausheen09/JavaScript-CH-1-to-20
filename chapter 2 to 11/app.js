@@ -1,29 +1,29 @@
-// ------------CHAPTER -02--------------
+// // ------------CHAPTER -02--------------
 
-// 1. Declare a variable called username.
-// ------ANSWER------
+// // 1. Declare a variable called username.
+// // ------ANSWER------
 // var userame ="Nausheen";
 // console.log(userame)
 
 
 
-// 2. Declare a variable called myName & assign to it a string that represents your Full Name.
-// ------ANSWER------
+// // 2. Declare a variable called myName & assign to it a string that represents your Full Name.
+// // ------ANSWER------
 // var myName ="Nausheen Nadeem";
 // console.log(myName)
 
 
 
-// 3. Write script to Declare a variable titled message, Display the message in an alert box
-// ------ANSWER------
-// Assign "Hello World" to the variable message
+// // 3. Write script to Declare a variable titled message, Display the message in an alert box
+// // ------ANSWER------
+// // Assign "Hello World" to the variable message
 // var message = "Hello World";
 // console.log(message)
 // alert(message);
 
 
 
-//4. Write a script to save student’s bio data in JS variables and show the data in alert boxes.
+// 4. Write a script to save student’s bio data in JS variables and show the data in alert boxes.
 // ------ANSWER------
 // var firstName = "John";
 // var lastName = "Doe";
@@ -518,7 +518,7 @@
 // alert("given condition for variable a is true");
 // }
 // REASON:
-//The condition ++a === 5 is evaluated. Since ++a has become 5 due to the increment operation,and 5 === 5 is true, the condition evaluates to true.The alert("given condition for variable a is true"); statement will be display.
+// The condition ++a === 5 is evaluated. Since ++a has become 5 due to the increment operation,and 5 === 5 is true, the condition evaluates to true.The alert("given condition for variable a is true"); statement will be display.
 
 // Part B:
 // var b = 82;

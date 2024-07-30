@@ -333,6 +333,34 @@
 
 // 10. Write a JavaScript function that checks whether a passed string is palindrome or not? A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.
 //------ANSWER------
+// function palindrome(string) {
+//     var cleanedString = string.replace(/\s+/g, '').toLowerCase();
+//     var final = cleanedString.split("").reverse().join("");
+//     if (final == cleanedString) {
+//         alert(string + " is a palindrome");
+//     } else {
+//         alert(string + " is not a palindrome");
+//     }
+// }
+// var userInput = prompt("Write any word");
+// palindrome(userInput);
+
+
+// function palindrome(string) {
+//     var check = "";
+//     for (var i = string.length - 1; i >= 0; i--) {
+//         check += string[i]
+//     }
+//     if (string === check) {
+//         alert(string + " is a plindrome word")
+//     }
+//     else {
+//         alert(string + " is  not a plindrome word")
+//     }
+// }
+// var str = prompt("Write any word")
+// palindrome(str);
+
 
 
 
@@ -342,7 +370,7 @@
 //     var array= str.split(" ");
 //     var newArray = [];
 //     for(var i = 0; i < array.length; i++) {
-//     newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1))
+//     newArray.push(array[i].charAt(0).toUpperCase() + array[i].slice(1).toLowerCase());
 //             }
 //             return newArray.join(" ");
 // }
@@ -358,10 +386,10 @@
 //------ANSWER------
 // function longest(string) {
 //     var split = string.split(" ");
-//     var first = split[0].length;
-//     for (var i = 0; i < split.length; i++) {
-//         if (first < split[i].length) {
-//             first = split[i]
+//     var first = split[0];
+//     for (var i = 0; i < split.length; i++){
+//         if(first.length < split[i].length) {
+//             first = split[i];
 //         }
 //     }
 //     return first;
@@ -376,19 +404,18 @@
 
 // 13. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string. Sample arguments : 'JSResourceS.com', 'o':
 //------ANSWER------
-// function count(string, letter) {
-//     var findOut = 0;
+// function countOccurrences(string, letter) {
+//     var count = 0;
 //     for (var i = 0; i < string.length; i++) {
 //         if (string[i] === letter) {
-//             find += 1;
+//             count++;
 //         }
 //     }
-//     return findOut;
+//     return count;
 // }
-// var string = "JSResourceS.com";
-// var letter = "o";
-// var result = count(string, letter);
-// document.write("The occurence of o in this string is " + result);
+// var string = 'JSResourceS.com';
+// var letter = 'o';
+// document.write("The occurence of o in this string is " + countOccurrences(string, letter)); 
 
 
 
@@ -399,32 +426,17 @@
 // • Calculate the circumference based on the radius, and output "The circumference is NN".Create a function called calcArea:
 // • Pass the radius to the function.
 // • Calculate the area based on the radius, and output "The area is NN".Circumference of circle = 2πr  Area of circle = πr2.
+
 //------ANSWER------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function calcCircumference(radius){
+//     var circumference = 2* 3.142* radius;
+// document.write("The Circumference of circle is " + circumference +"<br>");
+// }
+// function calcArea(radius){
+//     var circumference=  3.142 *(radius**radius);
+//     document.write("The Area of circle is "+ circumference);
+// }
+// var radius= parseInt(prompt("Enter radius of circle: "));
+// calcCircumference(radius);
+// calcArea(radius);
 
